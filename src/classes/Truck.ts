@@ -52,7 +52,7 @@ class Truck extends Vehicle implements AbleToTow {
 
   // TODO: Implement the tow method from the AbleToTow interface
   tow(vehicle: Truck | Motorbike | Car): void {
-    alert("Towing vehicle");
+    console.log("Towing vehicle");
     this.towingCapacity = 1000;
     if (vehicle.weight <= this.towingCapacity) {
       console.log("Vehicle is being towed");
@@ -91,3 +91,4 @@ class Truck extends Vehicle implements AbleToTow {
 
 // Export the Truck class as the default export
 export default Truck;
+ 
